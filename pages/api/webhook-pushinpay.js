@@ -7,6 +7,25 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Método não permitido' });
   }
 
+  // Validar token de segurança do webhook
+  // A PushinPay envia o token no header x-pushinpay-token
+  const webhookToken = req.headers['x-pushinpay-token'];
+  const expectedToken = process.env.PUSHINPAY_WEBHOOK_TOKEN;
+
+  if (expectedToken && webhookToken !== expectedToken) {
+    console.warn('⚠️ Token de webhook inválido ou ausente');
+    console.warn('Token recebido:', webhookToken ? '***' : 'ausente');
+    console.warn('Token esperado:', expectedToken ? '***' : 'não configurado');
+    return res.status(401).json({ error: 'Token inválido' });
+  }
+
+  // Se o token não estiver configurado, apenas logar um aviso mas continuar
+  if (!expectedToken) {
+    console.warn('⚠️ PUSHINPAY_WEBHOOK_TOKEN não configurado - webhook aceito sem validação');
+  } else {
+    console.log('✅ Token de webhook validado com sucesso');
+  }
+
   try {
     const payload = req.body;
     
