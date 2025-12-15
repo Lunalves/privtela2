@@ -84,22 +84,22 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Privacy | Marcelly Mar 😘</title>
+        <title>Privacy | Luna Alves 😘</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Conteúdo exclusivo da Marcelly Mar. Acesse fotos e vídeos premium." />
-        <meta name="keywords" content="Marcelly Mar, conteúdo exclusivo, privacy, fotos, vídeos" />
+        <meta name="description" content="Conteúdo exclusivo da Luna Alves. Acesse fotos e vídeos premium." />
+        <meta name="keywords" content="Luna Alves, conteúdo exclusivo, privacy, fotos, vídeos" />
         <link rel="icon" type="image/png" href="/images/favicon.png" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Privacy | Marcelly Mar" />
-        <meta property="og:description" content="Conteúdo exclusivo da Marcelly Mar. Acesse fotos e vídeos premium." />
+        <meta property="og:title" content="Privacy | Luna Alves" />
+        <meta property="og:description" content="Conteúdo exclusivo da Luna Alves. Acesse fotos e vídeos premium." />
         <meta property="og:image" content="https://i.imgur.com/ce3TQym.jpg" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Privacy | Marcelly Mar" />
-        <meta name="twitter:description" content="Conteúdo exclusivo da Marcelly Mar. Acesse fotos e vídeos premium." />
+        <meta name="twitter:title" content="Privacy | Luna Alves" />
+        <meta name="twitter:description" content="Conteúdo exclusivo da Luna Alves. Acesse fotos e vídeos premium." />
       </Head>
       
       {/* Tailwind CDN */}
@@ -234,17 +234,21 @@ export default function Home() {
           
           {/* Name with verification badge */}
           <div className="flex items-center mb-2 -mt-4">
-            <h2 className="text-lg font-bold text-black">Marcelly Mar</h2> 
+            <h2 className="text-lg font-bold text-black">Luna Alves</h2> 
             <img className="h-5 w-5 ml-2" src="/images/badge-check.svg" alt="Verificado" />
           </div>
           
           {/* Username */}
-          <p className="text-sm text-gray-600 mb-2 -mt-1">@marcellymar</p> 
+          <p className="text-sm text-gray-600 mb-2 -mt-1">@lunalves</p> 
           
           {/* Description */}
           <div className="text-gray-800 text-sm -mt-2">
             <p className="mb-0">
-              Sou uma safada de 19 aninhos e aqui mostro meu lado putinha com tudo liberado, conteúdo transando, chupando, masturbando, gozando e tudo, além de conversas picantes no chat, onde vc pode me pedir vídeos personalizados e fazer chamadas excitantes, vem gozar gostoso comigo mo😈💦💦
+              Mais de 600 VÍDEOS e FOTOS: Dando muuuito minha bucetinha rosinha no pelo com gozada dentro, Brinquedos, Squirt, Masturbação, POV, Cenas de Sexo e Fantasias 🔥
+              <br /><br />
+              Lives, Sorteios, Conteúdo todos os dias 😈
+              <br /><br />
+              além de conversas picantes no chat, onde vc pode me pedir vídeos personalizados e fazer chamadas excitantes
             </p>
           </div>
           
@@ -355,10 +359,10 @@ export default function Home() {
               <img className="h-12 w-12 rounded-full object-cover mr-4" src="https://i.imgur.com/ryeE63k.jpg" alt="Profile" />
               <div className="flex-1">
                 <div className="flex items-center">
-                  <h3 className="text-lg font-bold text-gray-900">Marcelly Mar 😘</h3>
+                  <h3 className="text-lg font-bold text-gray-900">Luna Alves 😘</h3>
                   <img className="h-5 w-5 ml-2" src="/images/badge-check.svg" alt="Verificado" />
                 </div>
-                <p className="text-sm text-gray-600">@marcellymar</p>
+                <p className="text-sm text-gray-600">@lunalves</p>
               </div>
               <button className="text-gray-600 hover:text-gray-800">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
