@@ -201,7 +201,7 @@ export default function Home() {
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
               </svg>
-              <span className="text-sm">159</span>
+              <span className="text-sm">541</span>
             </div>
             
             <div className="flex items-center space-x-1">
@@ -277,9 +277,9 @@ export default function Home() {
           <div className="mt-3">
             <h6 className="text-lg font-bold text-gray-800 mb-2">Assinaturas</h6>
             
-            <button onClick={() => handlePayment(1.00, '1 Mês')} className="w-full subscription-gradient text-black py-4 px-6 rounded-2xl font-medium transition-all mb-2 flex justify-between items-center shadow-sm">
-              <span>1 Mês</span>
-              <span>R$ 1,00</span>
+            <button onClick={() => handlePayment(19.90, 'Plano Mensal 19,90')} className="w-full subscription-gradient text-black py-4 px-6 rounded-2xl font-medium transition-all mb-2 flex justify-between items-center shadow-sm">
+              <span>Plano Mensal</span>
+              <span>R$ 19,90</span>
             </button>
           </div>
           
@@ -292,14 +292,14 @@ export default function Home() {
               </svg>
             </div>
             
-            <button onClick={() => handlePayment(50.00, '3 meses (16% off)')} className="w-full subscription-gradient text-black py-4 px-6 rounded-2xl font-medium transition-all mb-2 flex justify-between items-center shadow-sm">
-              <span>3 meses (16% off)</span>
-              <span>R$ 50,00</span>
+            <button onClick={() => handlePayment(47.76, 'Plano 3 Meses (20% OFF) – R$ 47,76')} className="w-full subscription-gradient text-black py-4 px-6 rounded-2xl font-medium transition-all mb-2 flex justify-between items-center shadow-sm">
+              <span>Plano 3 Meses (20% OFF)</span>
+              <span>R$ 47,76</span>
             </button>
             
-            <button onClick={() => handlePayment(99.90, 'Vitalício (50% off)')} className="w-full subscription-gradient text-black py-4 px-6 rounded-2xl font-medium transition-all flex justify-between items-center shadow-sm">
-              <span>Vitalício (50% off)</span>
-              <span>R$ 99,90</span>
+            <button onClick={() => handlePayment(59.70, 'Plano 6 Meses (50% OFF) – R$ 59,70')} className="w-full subscription-gradient text-black py-4 px-6 rounded-2xl font-medium transition-all flex justify-between items-center shadow-sm">
+              <span>Plano 6 Meses (50% OFF)</span>
+              <span>R$ 59,70</span>
             </button>
           </div>
         </div>
@@ -337,7 +337,7 @@ export default function Home() {
                 <svg className={`w-5 h-5 transition-transform duration-300 ${activeTab === 'medias' ? 'scale-110 animate-pulse' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                 </svg>
-                <span className="font-medium">159 Mídias</span>
+                <span className="font-medium">541 Mídias</span>
               </div>
             </div>
           </div>
@@ -417,14 +417,14 @@ export default function Home() {
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                     </svg>
-                    <span className="text-sm">159</span>
+                    <span className="text-sm">541</span>
                   </div>
                   
                   <div className="flex items-center space-x-2">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                     </svg>
-                    <span className="text-sm">364.6K</span>
+                    <span className="text-sm">285.7K</span>
                   </div>
                   
                   <div className="flex items-center space-x-2">
@@ -452,7 +452,7 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <button onClick={() => handlePayment(1.00, '1 Mês')} className="w-full bg-gradient-to-r from-orange-500 to-pink-500 text-white py-3 px-6 rounded-lg font-semibold hover:from-orange-600 hover:to-pink-600 transition-all">
+              <button onClick={() => handlePayment(19.90, 'Plano Mensal 19,90')} className="w-full bg-gradient-to-r from-orange-500 to-pink-500 text-white py-3 px-6 rounded-lg font-semibold hover:from-orange-600 hover:to-pink-600 transition-all">
                 🔒 Desbloquear todas as mídias
               </button>
             </div>
