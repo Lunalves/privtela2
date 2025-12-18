@@ -299,13 +299,14 @@ const PushinPayReal = {
     let tentativas = 0;
     const maxTentativas = 300;
     let ultimaConsulta = 0;
+    const intervaloMinimo = 3000; // Reduzido para 3 segundos entre consultas
 
-    this.estado.intervaloVerificacao = setInterval(async () => {
+    // Função de verificação extraída para reutilização
+    const fazerVerificacao = async () => {
       tentativas++;
 
       const agora = Date.now();
       const tempoDesdeUltimaConsulta = agora - ultimaConsulta;
-      const intervaloMinimo = 10000; // 10 segundos entre consultas
 
       if (tempoDesdeUltimaConsulta < intervaloMinimo && ultimaConsulta > 0) {
         const tempoRestante = intervaloMinimo - tempoDesdeUltimaConsulta;
@@ -412,7 +413,13 @@ const PushinPayReal = {
         console.error('Erro ao verificar pagamento:', error);
         ultimaConsulta = Date.now();
       }
-    }, 10000); // Verificar a cada 10 segundos
+    };
+
+    // Fazer primeira verificação imediatamente
+    fazerVerificacao();
+
+    // Depois verificar a cada 3 segundos
+    this.estado.intervaloVerificacao = setInterval(fazerVerificacao, 3000);
 
     console.log('✅ Verificação automática iniciada');
   },
